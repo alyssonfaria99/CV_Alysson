@@ -1,0 +1,186 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: #1f1f1f;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #0d47a1;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color:#ffca28 ;
+}
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1f1f1f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #90caf9;
+    font-size: 1.2em;
+}
+nav ul li a:hover {
+    color: #42a5f5;
+}
+.content {
+    display: flex;
+    gap: 20px;
+}
+.content .left-column, .content .right-column {
+    flex: 1;
+}
+.content .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section {
+    margin-bottom: 20px;
+    border: 1px solid #0d47a1;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    border-bottom: 2px solid #0d47a1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #bbdefb;
+}
+h3 {
+    color: #90caf9;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+ul {
+    padding: 20px;
+}
+ul li {
+    margin-bottom: 10px;
+}
+.icon {
+    margin-right: 8px;
+    color: #42a5f5;
+}
+.link a {
+    color: #90caf9;
+    text-decoration: none;
+}
+.link a:hover {
+    color: #42a5f5;
+}
+.competencies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.competencies li {
+    border: none;
+    padding: 0;
+    flex: 1 1 calc(50% - 20px);
+}
+.skill-bar {
+    background: #2e2e2e;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.skill-bar div {
+    height: 10px;
+    border-radius: 5px;
+}
+.basic { width: 33%; background: #42a5f5; }
+.intermediate { width: 66%; background: #1e88e5; }
+.advanced { width: 100%; background: #0d47a1; }
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background: #1f1f1f;
+    padding: 10px 0;
+}
+footer .contacts a {
+    margin: 0 10px;
+    color: #90caf9;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+footer .contacts a:hover {
+    color: #42a5f5;
+}
+footer p {
+    margin: 10px 0 0;
+    color: #90caf9;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .container {
+        width: 95%;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .competencies li {
+        flex: 1 1 100%;
+    }
+}
+/* New styles for project links */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #90caf9;
+    text-decoration: none;
+}
+.project-link:hover {
+    color: #42a5f5;
+}
+.project-link i {
+    color: #42a5f5;
+}
+.dev {
+    text-align: center;
+    border: none;
+    margin: 1px;
+}
+.dev h2 {
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
