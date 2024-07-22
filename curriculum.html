@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alysson Faria Santos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background: #1f1f1f;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            border: 1px solid #0d47a1;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color:#ffca28 ;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #1f1f1f;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #90caf9;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            color: #42a5f5;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+        .content .left-column, .content .right-column {
+            flex: 1;
+        }
+        .content .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            border: 1px solid #0d47a1;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #0d47a1;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            color: #bbdefb;
+        }
+        h3 {
+            color: #90caf9;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        ul {
+            padding: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .icon {
+            margin-right: 8px;
+            color: #42a5f5;
+        }
+        .link a {
+            color: #90caf9;
+            text-decoration: none;
+        }
+        .link a:hover {
+            color: #42a5f5;
+        }
+        .competencies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .competencies li {
+            border: none;
+            padding: 0;
+            flex: 1 1 calc(50% - 20px);
+        }
+        .skill-bar {
+            background: #2e2e2e;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .skill-bar div {
+            height: 10px;
+            border-radius: 5px;
+        }
+        .basic { width: 33%; background: #42a5f5; }
+        .intermediate { width: 66%; background: #1e88e5; }
+        .advanced { width: 100%; background: #0d47a1; }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            background: #1f1f1f;
+            padding: 10px 0;
+        }
+        footer .contacts a {
+            margin: 0 10px;
+            color: #90caf9;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        footer .contacts a:hover {
+            color: #42a5f5;
+        }
+        footer p {
+            margin: 10px 0 0;
+            color: #90caf9;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            .container {
+                width: 95%;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .competencies li {
+                flex: 1 1 100%;
+            }
+        }
+        /* New styles for project links */
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: #90caf9;
+            text-decoration: none;
+        }
+        .project-link:hover {
+            color: #42a5f5;
+        }
+        .project-link i {
+            color: #42a5f5;
+        }
+        .dev {
+            text-align: center;
+            border: none;
+            margin: 1px;
+        }
+        .dev h2 {
+            border-bottom: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#apresentacao">Apresentação</a></li>
+            <li><a href="#educacao">Educação</a></li>
+            <li><a href="#certificacoes">Certificações</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#linguas">Línguas</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header id="apresentacao">
+            <h1>Alysson Faria Santos</h1>
+            <p>alyssonfaria99@gmail.com | Bom Despacho, MG</p>
+        </header>
+        <div class="content">
+            <div class="left-column">
+                <section class="dev">
+                    <h2><i class="fas fa-desktop icon"></i>DESENVOLVEDOR BACK-END<i class="fas fa-database icon"></i></h2>
+                </section>
+                <section id="perfil">
+                    <h2><i class="fas fa-user icon"></i>Perfil</h2>
+                    <p>Sou um profissional proativo, comprometido, detalhista e com bom raciocínio lógico e crítico. Com um olhar atento para os detalhes, garanto que todas as tarefas e projetos sejam concluídos com precisão e qualidade. Minha proatividade me permite antecipar desafios e encontrar soluções eficazes, melhorando constantemente os processos e contribuindo para o sucesso da equipe. Além disso, minha capacidade analítica e de pensamento lógico me ajuda a resolver problemas complexos e gerar resultados positivos e diferenciados. Estou sempre em busca de novos conhecimentos e oportunidades.</p>
+                </section>
+                <section id="projetos">
+                    <h2><i class="fas fa-folder-open icon"></i>Projetos</h2>
+                    <p>
+                        <ul>
+                            <li><a class="project-link" target="_blank" href="https://github.com/alyssonfaria99/Ponto-De-Venda"><i class="fas fa-link"></i>Ponto de Venda</a> (PostgreSQL, Integração com APIs externas, Criptografia, Tokenização e validação com Schemas)</li>
+                            <li><a class="project-link" target="_blank" href="https://github.com/alyssonfaria99/Sistema-Bancario"><i class="fas fa-link"></i>Sistema Bancário</a> (Node.js, Express.js, CRUD)</li>
+                            <li><a class="project-link" target="_blank" href="https://github.com/alyssonfaria99/Carrinho-de-compras"><i class="fas fa-link"></i>Carrinho de Compras</a> (POO, HTML)</li>
+                            <li><a class="project-link" target="_blank" href="https://github.com/alyssonfaria99/Jogo"><i class="fas fa-link"></i>Jogo de Blocos</a> (POO, HTML)</li>
+                        </ul>
+                    </p>
+                </section>
+                <section id="linguas">
+                    <h2><i class="fas fa-language icon"></i>Línguas</h2>
+                    <p>Inglês: C1 Avançado</p>
+                    <p>Espanhol: Básico</p>
+                </section>
+            </div>
+                
+            <div class="right-column">
+                <section id="educacao">
+                    <h2><i class="fas fa-graduation-cap icon"></i>Educação</h2>
+                    <div>
+                        <h3>Universidade Federal de Viçosa</h3>
+                        <p>Bacharelado em Engenharia Química</p>
+                        <p>Março 2017 - Dezembro 2022</p>
+                    </div>
+                    <div>
+                        <h3>Cubos Academy</h3>
+                        <p>Desenvolvimento de Software com foco em Back-End</p>
+                        <p>Julho 2023 - Dezembro 2023</p>
+                    </div>
+                    <div>
+                        <h3>Projeto Desenvolve</h3>
+                        <p>Formação Full Stack</p>
+                        <p>Janeiro 2024 - Atualmente</p>
+                    </div>
+                </section>
+                <section id="habilidades">
+                    <h2><i class="fas fa-code icon"></i>Habilidades Técnicas</h2>
+                    <ul class="competencies">
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>API RESTful</li>
+                        <li>PostgreSQL</li>
+                        <li>Express.js</li>
+                        <li>POO</li>
+                        <li>Python</li>
+                        <li>Linux</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+        <section id="certificacoes">
+            <h2><i class="fas fa-certificate icon"></i>Certificações</h2>
+            <div>
+                <p><strong>Desenvolvedor Back-End</strong></p>
+                <p>Cubos Academy - 2023</p>
+            </div>
+            <div>
+                <p><strong>Scrum Foundation Professional Certification</strong></p>
+                <p>Certiprof - 2023</p>
+            </div>
+            <div>
+                <p><strong>JavaScript Algorithms and Data Structures</strong></p>
+                <p>freeCodeCamp - 2023</p>
+            </div>
+            <div>
+                <p><strong>Green Belt Lean Six Sigma</strong></p>
+                <p>Grupo Voitto - 2020</p>
+            </div>
+        </section>
+        
+        <section id="experiencia">
+            <h2><i class="fas fa-briefcase icon"></i>Experiência</h2>
+            <div>
+                <h3>Internet Safety Evaluator</h3>
+                <p>Telus International</p>
+                <p>Janeiro 2023 - Atualmente</p>
+                <ul>
+                    <li>Avaliação de conteúdos potencialmente enganosos de acordo com as diretrizes do projeto.</li>
+                    <li>Treinamento de IA para identificação de conteúdos impróprios e/ou danosos.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Analista de Qualidade</h3>
+                <p>Qualis – Nutrição Animal</p>
+                <p>Junho 2022 – Dezembro 2022</p>
+                <ul>
+                    <li>Garantia da qualidade das matérias-primas recebidas.</li>
+                    <li>Garantia da qualidade da linha de produção da indústria.</li>
+                    <li>Gerenciamento do laboratório da indústria.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="contacts">
+            <a href="https://github.com/alyssonfaria99" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/alyssonfaria99" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.hackerrank.com/profile/alyssonfaria99" target="_blank"><i class="fab fa-hackerrank"></i> HackerRank</a>
+        </div>
+        <p>&copy; 2024 Alysson Faria Santos</p>
+    </footer>
+</body>
+</html>
